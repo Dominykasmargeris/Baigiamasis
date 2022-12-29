@@ -1,0 +1,28 @@
+{% extends "base.html" %} {% block title %}Login{% endblock %} {% block content
+%}
+<form method="POST">
+  <h3 align="center">Prisijungimas</h3>
+  <div class="form-group">
+    <label for="email">Elektroninis pastas</label>
+    <input
+      type="email"
+      class="form-control"
+      id="email"
+      name="email"
+      placeholder="Iveskite el. pasta"
+    />
+  </div>
+  <div class="form-group">
+    <label for="password">Slaptazodis</label>
+    <input
+      type="password"
+      class="form-control"
+      id="password"
+      name="password"
+      placeholder="Iveskite slaptazodi"
+    />
+  </div>
+  <br />
+  <button type="submit" class="btn btn-primary">Prisijungti</button>
+</form>
+{% endblock %}
